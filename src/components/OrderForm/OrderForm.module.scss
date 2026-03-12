@@ -107,7 +107,7 @@
     height: 55px;
 }
 
-.orderForm__item:not(:last-child) .circleWrapper::after {
+.orderForm__item:not(:last-child) .orderForm__circleWrapper::after {
   content: "";
     position: absolute;
     width: 110px;

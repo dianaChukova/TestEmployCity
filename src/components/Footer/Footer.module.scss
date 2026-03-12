@@ -1,0 +1,106 @@
+.footer {
+    padding: 30px 0;
+    font-size: 13px;
+    background: rgba(61, 64, 80, 1);
+    color: rgba(255, 255, 255, 1);
+
+    @media (max-width: 768px) {
+        padding: 20px 0;
+    }
+}
+
+.footer__container {
+    max-width: 1180px; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+
+    @media (max-width: 992px) {
+        flex-direction: column; 
+        gap: 25px; 
+        text-align: center; 
+    }
+}
+
+.footer__copyright {
+    p {
+        margin: 0;
+    }
+}
+
+.footer__payments {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    color: rgba(195, 195, 195, 1);
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.footer__paymentItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer; 
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer__paymentIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__separator {
+    width: 1px;
+    height: 18px;
+    margin: 0 10px;
+    background: rgba(195, 195, 195, 1);
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    @media (max-width: 480px) {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}
+
+.footer__contactItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__contactIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__contactLink {
+    color: rgba(195, 195, 195, 1);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: rgba(62, 156, 220, 1);
+
+    }
+}

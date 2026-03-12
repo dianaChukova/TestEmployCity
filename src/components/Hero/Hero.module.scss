@@ -1,0 +1,136 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    align-items: center; 
+    padding: 100px 0; 
+
+    @media (max-width: 768px) {
+        min-height: auto;
+        padding: 150px 0 80px; 
+        background-position: 25% center; 
+    }
+}
+
+.hero__container {
+    max-width: 1200px; 
+    width: 100%;
+    margin: 100px auto;
+    padding: 0 20px; 
+
+    @media (max-width: 768px) {
+        margin: 0 auto; 
+    }
+}
+
+.hero__title {
+    font-size: 48px; 
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+
+    span {
+        color: rgba(62, 156, 220, 1);
+    }
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
+}
+
+.hero__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    li {
+        font-size: 18px;
+        position: relative;
+        padding-left: 20px; 
+        margin-bottom: 5px;
+
+        &::before {
+            content: "-"; 
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.hero__actions {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%; 
+    }
+}
+
+.hero__button {
+    padding: 15px 32px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center; 
+
+    &--blue {
+        background-color: rgba(62, 156, 220, 1);
+        color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(255, 255, 255, 1);
+        
+        &:hover { 
+            background-color: #3682b1; 
+            border-color: #3682b1;
+        }
+    }
+
+    &--white {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(42, 43, 48, 1);
+        border: 1px solid rgba(111, 109, 123, 1);
+        
+        &:hover { 
+            background-color: #f0f0f0; 
+            border-color: rgba(62, 156, 220, 1); 
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 100%; 
+    }
+}
